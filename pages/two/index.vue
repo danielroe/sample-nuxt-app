@@ -32,7 +32,8 @@
 
 </template>
 
-<script lang="ts">
+<script >
+
 import { defineComponent, ref } from "@nuxtjs/composition-api";
 import { Dropdown } from "sample-vue-library";
 
@@ -48,7 +49,7 @@ export default defineComponent({
       counter.value = counter.value + incrementValue.value;
     };
 
-    const updateValue = (value: number) => {
+    const updateValue = (value) => {
       incrementValue.value = value;
     };
 
